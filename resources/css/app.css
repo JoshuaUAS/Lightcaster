@@ -1,0 +1,33 @@
+@import 'tailwindcss';
+
+@source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
+@source '../../storage/framework/views/*.php';
+@source '../**/*.blade.php';
+@source '../**/*.js';
+
+@theme {
+    --font-sans: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+        'Segoe UI Symbol', 'Noto Color Emoji';
+}
+
+/* Custom styles for presentation slides */
+.slide-transition {
+    transition: opacity 0.5s ease-in-out;
+}
+
+.presentation-slide {
+    @apply flex items-center justify-center min-h-screen bg-black text-white;
+}
+
+.slide-content {
+    @apply text-center px-8 max-w-5xl;
+}
+
+.slide-text {
+    @apply text-5xl md:text-6xl lg:text-7xl leading-relaxed;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+.slide-reference {
+    @apply text-2xl md:text-3xl mt-8 opacity-80;
+}
