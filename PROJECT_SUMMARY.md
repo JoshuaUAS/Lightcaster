@@ -14,7 +14,7 @@ This document provides a comprehensive overview of what has been built for your 
 - **NativePHP/Electron 1.3.x** - Installed for desktop functionality
 - **Tailwind CSS** - Configured with custom presentation styles
 - **Flowbite UI Components** - Integrated and ready to use
-- **MySQL Database** - Configured for `easyworship_clone` database
+- **MySQL Database** - Configured for `lightcaster` database
 - **PHP 8.4.14** - Running and tested
 - **Composer Dependencies** - All backend packages installed
 - **NPM Dependencies** - All frontend packages installed
@@ -363,7 +363,7 @@ npm run build
 
 ```bash
 # Create database
-mysql -u root -p -e "CREATE DATABASE easyworship_clone CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;"
+mysql -u root -p -e "CREATE DATABASE lightcaster CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;"
 
 # Run migrations
 php artisan migrate

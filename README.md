@@ -110,7 +110,7 @@ APP_URL=http://localhost
 DB_CONNECTION=mysql
 DB_HOST=127.0.0.1
 DB_PORT=3306
-DB_DATABASE=easyworship_clone
+DB_DATABASE=lightcaster
 DB_USERNAME=root
 DB_PASSWORD=
 ```
@@ -130,13 +130,13 @@ php artisan key:generate
 Open MySQL command line or phpMyAdmin and create the database:
 
 ```sql
-CREATE DATABASE easyworship_clone CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+CREATE DATABASE lightcaster CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
 ```
 
 Or use the command line:
 
 ```bash
-mysql -u root -p -e "CREATE DATABASE easyworship_clone CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;"
+mysql -u root -p -e "CREATE DATABASE lightcaster CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;"
 ```
 
 ### Step 2: Run Migrations
@@ -364,7 +364,7 @@ Lightcaster/
 2. Check credentials in `.env` file
 3. Ensure database exists:
    ```bash
-   mysql -u root -p -e "SHOW DATABASES LIKE 'easyworship_clone';"
+   mysql -u root -p -e "SHOW DATABASES LIKE 'lightcaster';"
    ```
 
 ### Migrations Failed
@@ -379,7 +379,7 @@ Lightcaster/
 
 2. Drop and recreate database:
    ```bash
-   mysql -u root -p -e "DROP DATABASE IF EXISTS easyworship_clone; CREATE DATABASE easyworship_clone CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;"
+   mysql -u root -p -e "DROP DATABASE IF EXISTS lightcaster; CREATE DATABASE lightcaster CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;"
    ```
 
 3. Run migrations again:
